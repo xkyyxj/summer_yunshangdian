@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/temp_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="96px"
+        android:background="#4ec1e8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_name"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_below="@id/temp_title_bar"
+        android:id="@+id/send_info_area"
+        android:layout_centerHorizontal="true"
+        android:maxLength="200"
+        android:hint="@string/fragment_send_info_area_hint"
+        android:gravity="top"
+        android:lines="15"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/input_bg"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="发送"
+        android:layout_below="@id/send_info_area"/>
+
+</RelativeLayout>

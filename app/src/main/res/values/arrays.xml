@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="activity_register_category_arr">
+        <item >外卖类</item>
+        <item >便利店</item>
+        <item >生活服务类</item>
+        <item >药店</item>
+    </string-array>
+    
+    <string-array name="face_image_choice_item">
+        <item >选择本地照片</item>
+        <item >拍照</item>
+    </string-array>
+    
+</resources>

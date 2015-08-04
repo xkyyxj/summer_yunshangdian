@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_weight="0.3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:clickable="true" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        
+        <TextView
+    	    android:id="@+id/activity_register_shop_category_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_category_label"
+    	    android:layout_marginTop="10dp"
+    	    android:textSize="16sp"/>
+        
+    	<Spinner
+        	android:id="@+id/activity_register_category"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/activity_register_shop_category_label"
+        	android:layout_marginLeft="10dp"
+        	android:background="@drawable/input_bg"
+        	android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/activity_register_shop_name_label"
+    	    android:layout_below="@id/activity_register_category"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_name_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/activity_register_shop_name"
+    	    android:layout_below="@id/activity_register_category"
+    	    android:layout_toRightOf="@id/activity_register_shop_name_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/activity_register_shop_work_label"
+    	    android:layout_below="@id/activity_register_shop_name"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_work_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/activity_register_shop_work"
+    	    android:layout_below="@id/activity_register_shop_name_label"
+    	    android:layout_toRightOf="@id/activity_register_shop_work_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/activity_register_shop_addr_label"
+    	    android:layout_below="@id/activity_register_shop_work_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_addr_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/activity_register_shop_addr"
+    	    android:layout_below="@id/activity_register_shop_work_label"
+    	    android:layout_toRightOf="@id/activity_register_shop_addr_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/activity_register_shop_tele_label"
+    	    android:layout_below="@id/activity_register_shop_addr_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_tele_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/activity_register_shop_tele"
+    	    android:layout_below="@id/activity_register_shop_addr_label"
+    	    android:layout_toRightOf="@id/activity_register_shop_tele_label"
+    	    android:layout_alignLeft="@id/activity_register_shop_addr"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginTop="10dp"/>
+
+    	<ImageButton
+    	    android:id="@+id/activity_register_register_button"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:background="@drawable/button1"
+    	    android:layout_below="@id/activity_register_shop_tele_label"
+    	    android:contentDescription="@string/app_name"
+    	    android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+</LinearLayout>

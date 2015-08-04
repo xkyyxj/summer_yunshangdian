@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="键"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="5dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="值"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:textSize="30dp" />
+</RelativeLayout>

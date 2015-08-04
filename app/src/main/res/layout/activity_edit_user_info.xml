@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/ac_edit_info_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_edit_user_info_user_pic"
+            android:layout_centerVertical="true"/>
+        
+    	<ImageView
+    	    android:id="@+id/user_pic" 
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_width="140dp"
+    	    android:layout_height="140dp" 
+    	    android:contentDescription="@string/app_name"/>
+    	
+    	<ImageButton
+    	    android:id="@+id/change_pic"
+    	    android:layout_toRightOf="@id/user_pic"
+    	    android:layout_alignBottom="@id/user_pic"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/ic_launcher"
+    	    android:contentDescription="@string/app_name"/>
+        
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/ac_edit_info_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        
+        <TextView
+    	    android:id="@+id/ac_edit_name_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_name"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+        
+        <TextView
+    	    android:id="@+id/ac_edit_name"
+    	    android:layout_toRightOf="@id/ac_edit_name_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_name_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+        
+        <TextView
+    	    android:id="@+id/ac_edit_addr_label"
+    	    android:layout_below="@id/ac_edit_name_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_addr"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+        
+        <TextView
+    	    android:id="@+id/ac_edit_addr"
+    	    android:layout_toRightOf="@id/ac_edit_addr_label"
+    	    android:layout_below="@id/ac_edit_name_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_register_shop_name_label"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+        
+        <TextView
+    	    android:id="@+id/ac_edit_tele_label"
+    	    android:layout_below="@id/ac_edit_addr_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_tele"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/ac_edit_tele"
+    	    android:layout_below="@id/ac_edit_addr_label"
+    	    android:layout_toRightOf="@id/ac_edit_tele_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/ac_edit_time_label"
+    	    android:layout_below="@id/ac_edit_tele_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_work_time"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<LinearLayout
+    	    android:id="@+id/ac_edit_time"
+    	    android:layout_below="@id/ac_edit_tele_label"
+    	    android:layout_toRightOf="@id/ac_edit_time_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginTop="10dp"
+    	    android:orientation="horizontal">
+    	   		<TextView
+    	   		    android:id="@+id/ac_edit_time1"
+    	    		android:text="@string/activity_edit_user_info_start_time"
+    	    		android:textSize="16sp"
+    	    		android:background="@drawable/input_bg"
+    	    		android:layout_width="0dp"
+    	    		android:textColor="@color/ac_edit_user_info_text_de_co"
+    	    		android:layout_weight="0.4"
+    	   		    android:layout_height="wrap_content"/>
+    	   		<View
+    	   		    android:id="@+id/temp1"
+    	   		    android:layout_width="0dp"
+    	   		    android:layout_height="4dp"
+    	   		    android:background="@drawable/line1"
+    	   		    android:layout_weight="0.1"
+    	   		    android:layout_marginTop="5dp"/>
+    	   		<TextView
+    	   		    android:id="@+id/ac_edit_time2"
+    	   		    android:layout_width="0dp"
+    	   		    android:layout_height="wrap_content"
+    	   		    android:layout_weight="0.4"
+    	   		    android:textColor="@color/ac_edit_user_info_text_de_co"
+    	   		    android:background="@drawable/input_bg"
+    	   		    android:text="@string/activity_edit_user_info_end_time"/>
+		</LinearLayout>
+    	
+    	<TextView
+    	    android:id="@+id/ac_edit_acc_mo_label"
+    	    android:layout_below="@id/ac_edit_time_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_acc_mo"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/ac_edit_acc_mo"
+    	    android:layout_below="@id/ac_edit_time_label"
+    	    android:layout_toRightOf="@id/ac_edit_acc_mo_label"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_alignLeft="@id/ac_edit_time"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/ac_edit_send_mo_label"
+    	    android:layout_below="@id/ac_edit_acc_mo_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_send_mo"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<EditText
+    	    android:id="@+id/ac_edit_send_mo"
+    	    android:layout_below="@id/ac_edit_acc_mo_label"
+    	    android:layout_toRightOf="@id/ac_edit_send_mo_label"
+    	    android:layout_alignLeft="@id/ac_edit_acc_mo"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/activity_register_not_change_hint"
+    	    android:textSize="16sp"
+    	    android:background="@drawable/input_bg"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<TextView
+    	    android:id="@+id/ac_edit_still_work_label"
+    	    android:layout_below="@id/ac_edit_send_mo_label"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/activity_edit_user_info_stop_work"
+    	    android:textSize="16sp"
+    	    android:layout_marginTop="10dp"/>
+    	
+    	<com.test.main.MySwitchButton
+    	    android:id="@+id/ac_edit_still_work"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/ac_edit_send_mo_label"
+    	    android:layout_marginTop="10dp"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_toRightOf="@id/ac_edit_still_work_label"/>
+
+    	<ImageButton
+    	    android:id="@+id/ac_ok"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:background="@drawable/button1"
+    	    android:layout_below="@id/ac_edit_still_work"
+    	    android:contentDescription="@string/app_name"
+    	    android:layout_marginTop="10dp"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

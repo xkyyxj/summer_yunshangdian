@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wqch_activity_login_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:contentDescription="@string/app_name"/>
+    
+    <RelativeLayout
+        android:id="@+id/login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/activity_login_input_bg">"
+        
+        <ImageButton
+        	android:id="@+id/login"
+        	android:layout_marginTop="10dp"
+        	android:layout_width="190dp"
+        	android:layout_height="40dp"
+        	android:layout_marginBottom="10dp"
+        	android:layout_alignParentBottom="true"
+        	android:background="@drawable/activity_login_login"
+        	android:layout_centerHorizontal="true"
+        	android:contentDescription="@string/app_name"/>
+                       
+        <EditText
+            android:id="@+id/user_password"
+            android:layout_above="@id/login"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/activity_login_text_input_bg"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="@string/wqch_activity_login_password_hint"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="#ffdddddd"
+            android:textSize="14sp" />
+        
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_above="@id/user_password"
+            android:layout_width="280dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/activity_login_text_input_bg"
+            android:drawableLeft="@drawable/user"
+            android:hint="@string/wqch_activity_login_user_hint"
+            android:paddingLeft="15dp"
+            android:textColorHint="#ffdddddd"
+            android:textSize="14sp"/>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"/>
+ 
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp">
+        
+    	<ImageButton
+        	android:id="@+id/register_button"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/activity_login_newuser"
+        	android:contentDescription="@string/app_name" />
+    	
+    </RelativeLayout>
+    
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/pic"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_breakfast"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/pic"
+            android:id="@+id/tv_name"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单价"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_below="@id/tv_name"
+            android:layout_alignLeft="@id/tv_name"
+            android:id="@+id/tv_price" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销量 （32）"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@id/tv_price"
+            android:layout_below="@id/tv_name"
+            android:id="@+id/tv_sales" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ll1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="编辑"
+            android:background="#0fff"
+            android:id="@+id/btn_edit" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="上架"
+            android:layout_marginLeft="10dp"
+            android:background="#0fff"
+            android:id="@+id/btn_state" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="删除"
+            android:layout_marginLeft="10dp"
+            android:background="#0fff"
+            android:id="@+id/btn_delete" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="none"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_id" />
+</RelativeLayout>

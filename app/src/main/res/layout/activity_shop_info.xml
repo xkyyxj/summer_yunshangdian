@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/shop_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name"/>
+    
+    <RelativeLayout
+        android:layout_toRightOf="@id/shop_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/shop_pic"
+        android:layout_alignBottom="@id/shop_pic"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        
+        <TextView
+            android:id="@+id/good_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/good_comm"/>
+        
+        <TextView
+            android:id="@+id/bad_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/bad_comm"
+            android:layout_toRightOf="@id/good_comm"/>
+        
+        <TextView
+            android:id="@+id/sell_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_sell_count_label"
+            android:layout_below="@id/good_comm"/>
+        
+        <TextView
+            android:id="@+id/sell_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sell_count_label"
+            android:layout_below="@id/good_comm"/>
+        
+        <TextView
+            android:id="@+id/comm_count_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_comm_count_label"
+            android:layout_below="@id/sell_count_label"/>
+        
+        <TextView
+            android:id="@+id/comm_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_comm_count_label"
+            android:layout_below="@id/sell_count_label"
+            android:layout_toRightOf="@id/comm_count_label"/>
+        
+        <ImageButton
+            android:id="@+id/check_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sell_count_label"
+            android:layout_toRightOf="@id/comm_count"
+            android:contentDescription="@string/app_name"/>
+        
+	</RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/shop_pic"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        
+        <View
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line2"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_below="@id/line1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line1"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <View
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line2"
+            android:layout_below="@id/name_label"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView
+            android:id="@+id/addr_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_addr_label"
+            android:layout_below="@id/line2"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line2"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <View
+            android:id="@+id/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/line2"
+            android:layout_below="@id/addr_label"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView
+            android:id="@+id/tele_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_tele_label"
+            android:layout_below="@id/line3"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/line3"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_time_label"
+            android:layout_below="@id/tele_label"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tele_label"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView
+            android:id="@+id/acc_mo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_acc_mo_label"
+            android:layout_below="@id/time_label"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/acc_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/time_label"
+            android:text="@string/activity_shop_info_shop_acc_mo_label"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView
+            android:id="@+id/send_mo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_send_mo_label"
+            android:layout_below="@id/acc_mo_label"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/send_mo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/acc_mo_label"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <TextView
+            android:id="@+id/state_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_shop_info_shop_state_label"
+            android:layout_below="@id/send_mo_label"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/send_mo_label"
+            android:text="@string/activity_shop_info_shop_name_label"
+            android:layout_marginBottom="10dp" />
+        
+        <ImageButton
+            android:id="@+id/log_off_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state_label"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"/>
+        
+	</RelativeLayout>"
+
+</RelativeLayout>
